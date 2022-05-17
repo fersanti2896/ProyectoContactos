@@ -1,0 +1,18 @@
+﻿@model ContactoData
+@{
+    ViewData["Title"] = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Detalles Contacto
+  </div>
+  <div class="card-body">
+    <dl class="row">
+        <b>Nombre:</b> <dd class=col-sm-2>@Html.DisplayFor(model => model.Nombre)</dd>
+        <b>Teléfono:</b> <dd class=col-sm-2>@Html.DisplayFor(model => model.Telefono)</dd>
+        <b>Correo:</b><dd class=col-sm-2>@Html.DisplayFor(model => model.Correo)</dd>
+    </dl>
+  </div>
+</div>
